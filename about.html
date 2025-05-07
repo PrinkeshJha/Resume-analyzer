@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Resume Analyzer</title>
+    <meta name="description" content="Learn how our resume analysis technology works" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+
+  <body class="light-theme">
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">Resume Analyzer</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>Learn how our technology helps you find the perfect career path</p>
+        </div>
+      </section>
+
+      <section class="about-content container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Our Mission</h2>
+            <p>At Resume Pathway Finder, we're dedicated to helping job seekers discover career paths that align with their skills, experience, and interests. Our AI-powered platform analyzes your resume to identify the top career options where you're likely to succeed and find fulfillment.</p>
+            
+            <h2>How Our Technology Works</h2>
+            <p>Our advanced resume analysis engine uses natural language processing and machine learning algorithms to extract key information from your resume, including:</p>
+            
+            <ul>
+              <li>Technical and soft skills</li>
+              <li>Educational background</li>
+              <li>Work experience and achievements</li>
+              <li>Industry knowledge and specializations</li>
+            </ul>
+            
+            <p>We then compare this information against our database of career profiles and requirements to identify the most promising career paths for your unique combination of qualifications.</p>
+          </div>
+          
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800" alt="Technology illustration" />
+          </div>
+        </div>
+        
+        <div class="benefits">
+          <h2>Benefits of Using Resume Pathway Finder</h2>
+          
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <i class="fas fa-compass"></i>
+              <h3>Career Discovery</h3>
+              <p>Discover new career paths you might not have considered that match your qualifications</p>
+            </div>
+            
+            <div class="benefit-card">
+              <i class="fas fa-chart-line"></i>
+              <h3>Skills Analysis</h3>
+              <p>Understand which of your skills are most valuable in today's job market</p>
+            </div>
+            
+            <div class="benefit-card">
+              <i class="fas fa-bullseye"></i>
+              <h3>Targeted Development</h3>
+              <p>Identify skill gaps to focus your learning and development efforts</p>
+            </div>
+            
+            <div class="benefit-card">
+              <i class="fas fa-rocket"></i>
+              <h3>Career Transition</h3>
+              <p>Get guidance on how to leverage your existing experience for a career change</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Resume Analyzer. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
